@@ -161,8 +161,7 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
   -webkit-text-size-adjust: 100%;
-  overflow-x: hidden;
-  max-width: 100vw;
+  overflow-x: clip;
 }
 
 body {
@@ -171,8 +170,7 @@ body {
   color: var(--text-primary);
   line-height: 1.6;
   letter-spacing: -0.01em;
-  overflow-x: hidden;
-  max-width: 100vw;
+  overflow-x: clip;
   width: 100%;
   position: relative;
   min-height: 100vh;
@@ -2630,15 +2628,28 @@ img, svg {
    17. SCROLL REVEAL ANIMATIONS
    -------------------------------------------------------------------------- */
 .reveal-on-scroll {
-  opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: opacity, transform;
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.reveal-on-scroll.revealed {
-  opacity: 1;
-  transform: translateY(0);
+@media (min-width: 769px) {
+  html.js-ready .reveal-on-scroll:not(.revealed) {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  html.js-ready .reveal-on-scroll.revealed {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    visibility: visible !important;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -2764,14 +2775,24 @@ img, svg {
     text-align: center;
   }
 
-  /* Frame Header: Hide badge on mobile screens so address bar fits perfectly */
+  /* Frame Header: Compact badge & address bar */
   .mockup-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
     padding: 8px 10px;
-    gap: 8px;
+    gap: 6px;
   }
 
   .mockup-badge {
-    display: none;
+    display: inline-flex !important;
+    font-size: 0.58rem;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background-color: var(--accent-primary-light);
+    white-space: nowrap;
+    flex-shrink: 0;
   }
 
   .mockup-address {
@@ -2786,7 +2807,37 @@ img, svg {
   }
 
   .aegis-sidebar {
-    display: none;
+    display: flex !important;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+    padding: 8px 10px;
+    border-right: none;
+    border-bottom: 1px solid var(--border-subtle);
+    background-color: #070a10;
+  }
+
+  .sidebar-logo {
+    margin-bottom: 0;
+    font-size: 0.6875rem;
+  }
+
+  .sidebar-nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .s-nav-item {
+    font-size: 0.6rem;
+    padding: 2px 5px;
+  }
+
+  .sidebar-status {
+    font-size: 0.5625rem;
   }
 
   .dash-top-metrics {
@@ -2994,7 +3045,9 @@ img, svg {
   }
 
   .editor-badge {
-    display: none;
+    display: inline-block !important;
+    font-size: 0.625rem;
+    padding: 2px 6px;
   }
 
   .editor-body {
@@ -3072,13 +3125,19 @@ img, svg {
   }
 
   .rescue-route {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
   }
 
   .route-line {
-    display: none;
+    display: block !important;
+    width: 14px;
+    height: 1px;
+    background-color: #334155;
+    flex-shrink: 0;
   }
 
   .rescue-footer {
