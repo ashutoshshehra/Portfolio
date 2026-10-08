@@ -1,0 +1,21 @@
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# NetBeans Private & Build Directories
+nbproject/private/
+build/
+dist/
+
+# Java Class & Eclipse Files
+*.class
+.classpath
+.project
+.settings/
+
+# Editor temporary directories
+.idea/
+.vscode/
+*.swp
+*~

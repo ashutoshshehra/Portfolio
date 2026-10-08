@@ -1,0 +1,1633 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ashutosh Shehra | Engineering Student &amp; Java Developer</title>
+  <meta name="description" content="Portfolio of Ashutosh Shehra, an engineering student focused on Java, backend development, and building practical software projects.">
+  <meta name="keywords" content="Ashutosh Shehra, Java Developer, Engineering Student, Jakarta EE, Servlets, JSP, Spring, MySQL, JDBC, Backend Developer">
+  <meta name="author" content="Ashutosh Shehra">
+
+  <meta name="theme-color" content="#080c14">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- Open Graph / Facebook / LinkedIn Meta Tags -->
+  <meta property="og:title" content="Ashutosh Shehra | Engineering Student &amp; Java Developer">
+  <meta property="og:description" content="Engineering student focused on Java, backend development, and building practical software projects.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/ashutosh-shehra.jpg">
+
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ashutosh Shehra | Engineering Student &amp; Java Developer">
+  <meta name="twitter:description" content="Engineering student focused on Java, backend development, and building practical software projects.">
+  <meta name="twitter:image" content="assets/ashutosh-shehra.jpg">
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230f172a'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' font-family='sans-serif' font-weight='bold' font-size='46' fill='%2338bdf8'>AS</text></svg>">
+</head>
+<body>
+  <!-- Background Glow & Grid Canvas Elements -->
+  <div class="bg-pattern" aria-hidden="true">
+    <div class="glow-orb glow-top-left"></div>
+    <div class="glow-orb glow-bottom-right"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Ashutosh Shehra Home">
+        <span class="brand-monogram">AS</span>
+        <span class="brand-text">Ashutosh<span class="brand-dot">.java</span></span>
+      </a>
+
+      <!-- Desktop Nav Items -->
+      <nav class="nav-links" id="navLinks" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & Resume Button) -->
+      <div class="nav-actions">
+        <!-- Theme Switcher -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="12" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="assets/Ashutosh_Shehra_Resume.pdf" download="Ashutosh_Shehra_Resume.pdf" class="btn btn-sm btn-outline nav-resume-btn">
+          <span>Resume</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+            <polyline points="7 10 12 15 17 10"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3"></line>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Navigation -->
+    <div class="mobile-drawer" id="mobileDrawer">
+      <nav class="mobile-nav-links">
+        <a href="#about" class="mobile-nav-link">About</a>
+        <a href="#skills" class="mobile-nav-link">Skills</a>
+        <a href="#projects" class="mobile-nav-link">Projects</a>
+        <a href="#education" class="mobile-nav-link">Education</a>
+        <a href="#contact" class="mobile-nav-link">Contact</a>
+        <div class="mobile-drawer-footer">
+          <a href="assets/Ashutosh_Shehra_Resume.pdf" download="Ashutosh_Shehra_Resume.pdf" class="btn btn-primary btn-block">
+            Download Resume
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+              <polyline points="7 10 12 15 17 10"></polyline>
+              <line x1="12" y1="15" x2="12" y2="3"></line>
+            </svg>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- 1 & 2. HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <!-- Hero Left Column -->
+        <div class="hero-content reveal-on-scroll">
+          <div class="hero-badge">
+            <span class="status-indicator"></span>
+            <span class="badge-text">JAVA DEVELOPER • SOFTWARE ENGINEERING STUDENT</span>
+          </div>
+
+          <h1 class="hero-name">
+            Ashutosh <span class="gradient-text">Shehra</span>
+          </h1>
+
+          <p class="hero-tagline">
+            "Building practical software with Java."
+          </p>
+
+          <p class="hero-description">
+            I'm an engineering student focused on Java, backend development, and building practical software projects.
+          </p>
+
+          <!-- Hero CTAs -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-arrow">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <a href="assets/Ashutosh_Shehra_Resume.pdf" download="Ashutosh_Shehra_Resume.pdf" class="btn btn-secondary">
+              <span>Download Resume</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Hero Social Links & Email -->
+          <div class="hero-socials">
+            <a href="https://github.com/ashutoshshehra" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="GitHub Profile">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/ashutosh-shehra-17b498398" target="_blank" rel="noopener noreferrer" class="social-chip" aria-label="LinkedIn Profile">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="mailto:ashutoshshehra01@gmail.com" class="social-chip" aria-label="Email Ashutosh Shehra">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>ashutoshshehra01@gmail.com</span>
+            </a>
+
+            <!-- Quick copy email tooltip button -->
+            <button class="copy-email-btn" id="copyEmailBtn" data-email="ashutoshshehra01@gmail.com" title="Copy email address" aria-label="Copy email">
+              <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span class="copy-tooltip" id="copyTooltip">Copy</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Hero Right Column: Developer Code Editor & Profile Showcase -->
+        <div class="hero-visual reveal-on-scroll">
+          <div class="code-editor-card">
+            <!-- Window Top Bar -->
+            <div class="editor-header">
+              <div class="editor-controls">
+                <span class="dot dot-close"></span>
+                <span class="dot dot-minimize"></span>
+                <span class="dot dot-maximize"></span>
+              </div>
+              <div class="editor-tab">
+                <span class="tab-icon">☕</span>
+                <span class="tab-title">Developer.java</span>
+              </div>
+              <div class="editor-badge">
+                <span>Java</span>
+              </div>
+            </div>
+
+            <!-- Code Editor Body -->
+            <div class="editor-body">
+              <div class="line-numbers" aria-hidden="true">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>6</span>
+                <span>7</span>
+                <span>8</span>
+                <span>9</span>
+                <span>10</span>
+              </div>
+              <pre class="code-content"><code><span class="code-kw">public class</span> <span class="code-class">Developer</span> {
+
+    <span class="code-type">String</span> <span class="code-var">name</span> = <span class="code-str">"Ashutosh Shehra"</span>;
+    <span class="code-type">String</span> <span class="code-var">focus</span> = <span class="code-str">"Java Development"</span>;
+    <span class="code-type">String</span> <span class="code-var">goal</span> = <span class="code-str">"Build Practical Software"</span>;
+
+    <span class="code-kw">public void</span> <span class="code-method">keepLearning</span>() {
+        <span class="code-type">System</span>.<span class="code-var">out</span>.<span class="code-method">println</span>(<span class="code-str">"Learning and Building"</span>);
+    }
+}</code></pre>
+            </div>
+
+            <!-- Editor Status Bar Footer -->
+            <div class="editor-footer">
+              <div class="footer-left">
+                <span class="status-git-branch">⎇ main</span>
+                <span class="status-encoding">UTF-8</span>
+              </div>
+              <div class="footer-right">
+                <span class="status-lang">Java</span>
+                <span class="status-pill">Ready</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Developer Profile Companion Card (No overlap, 100% clean) -->
+          <div class="hero-profile-card">
+            <div class="hero-profile-frame">
+              <img 
+                src="assets/ashutosh-shehra.jpg" 
+                alt="Ashutosh Shehra - Java Developer and Software Engineering Student" 
+                class="hero-profile-img" 
+                width="84" 
+                height="102" 
+                loading="eager" 
+                decoding="async" 
+              />
+            </div>
+            <div class="hero-profile-details">
+              <div class="hero-profile-header">
+                <span class="hero-profile-name">Ashutosh Shehra</span>
+                <span class="hero-profile-status">
+                  <span class="status-indicator"></span>
+                  <span>Available</span>
+                </span>
+              </div>
+              <div class="hero-profile-role">Java Developer • Engineering Student</div>
+              <p class="hero-profile-desc">
+                Focused on Java, backend development, and building practical software.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">01. ABOUT ME</span>
+          <h2 class="section-title">Engineering Student &amp; Java Developer</h2>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Narrative -->
+          <div class="about-narrative reveal-on-scroll">
+            <p class="lead-text">
+              I am an engineering student with a strong focus on Java, backend development, and building practical software projects.
+            </p>
+            <p>
+              I enjoy understanding how software works under the hood—from core object-oriented programming to relational databases and web request lifecycles.
+            </p>
+            <p>
+              I focus on writing clean, readable, and well-structured code. Through hands-on projects like <strong>AEGIS</strong> and <strong>AnnaSetu</strong>, I practice designing maintainable applications using Java, Servlets, JSP, JDBC, and MySQL.
+            </p>
+
+            <!-- Supporting Profile Card in About -->
+            <div class="about-profile-card">
+              <div class="about-profile-frame">
+                <img 
+                  src="assets/ashutosh-shehra.jpg" 
+                  alt="Ashutosh Shehra - Java Developer and Software Engineering Student" 
+                  class="about-profile-img" 
+                  width="80" 
+                  height="96" 
+                  loading="lazy" 
+                  decoding="async" 
+                />
+              </div>
+              <div class="about-profile-meta">
+                <div class="about-profile-name">Ashutosh Shehra</div>
+                <div class="about-profile-role">Engineering Student &amp; Java Developer</div>
+                <p class="about-profile-bio">
+                  Focused on core Java, object-oriented design, relational databases, and building reliable, maintainable software.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Information Cards -->
+          <div class="about-cards-col reveal-on-scroll">
+            
+            <div class="info-card">
+              <div class="info-card-icon">🎯</div>
+              <div class="info-card-content">
+                <span class="info-card-label">Focus</span>
+                <h3 class="info-card-value">Java Development</h3>
+                <p class="info-card-detail">Core Java, Servlets, JSP, JDBC, and object-oriented programming.</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon">⚡</div>
+              <div class="info-card-content">
+                <span class="info-card-label">Currently Learning</span>
+                <h3 class="info-card-value">Spring</h3>
+                <p class="info-card-detail">Inversion of Control (IoC), Dependency Injection, and RESTful APIs.</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon">🛠️</div>
+              <div class="info-card-content">
+                <span class="info-card-label">Interests</span>
+                <h3 class="info-card-value">Backend Development</h3>
+                <p class="info-card-detail">Database design, SQL queries, application logic, and web backend architecture.</p>
+              </div>
+            </div>
+
+            <div class="info-card">
+              <div class="info-card-icon">🚀</div>
+              <div class="info-card-content">
+                <span class="info-card-label">Goal</span>
+                <h3 class="info-card-value">Software Engineering</h3>
+                <p class="info-card-detail">Building practical software, solving real problems, and growing as an engineer.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 8. SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">02. TECHNICAL TOOLKIT</span>
+          <h2 class="section-title">Technologies &amp; Competencies</h2>
+          <p class="section-subtitle">
+            Technologies and concepts practiced through hands-on projects, coursework, and independent study.
+          </p>
+        </div>
+
+        <!-- Skills Categories Grid -->
+        <div class="skills-categories-grid">
+          
+          <!-- Category 1: Languages & Core Foundations -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <span class="category-icon">💻</span>
+              <h3 class="category-title">Core Languages</h3>
+            </div>
+            <div class="tech-badges-list">
+              
+              <div class="tech-badge" data-tech="Java">
+                <span class="tech-icon">☕</span>
+                <div class="tech-info">
+                  <span class="tech-name">Java</span>
+                  <span class="tech-desc">OOP, Collections, Streams, Multithreading</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="C++">
+                <span class="tech-icon">⚙️</span>
+                <div class="tech-info">
+                  <span class="tech-name">C++</span>
+                  <span class="tech-desc">Memory management, DSA, Problem solving</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="SQL">
+                <span class="tech-icon">🗄️</span>
+                <div class="tech-info">
+                  <span class="tech-name">SQL</span>
+                  <span class="tech-desc">Queries, Joins, Constraints, Normalization</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="JavaScript">
+                <span class="tech-icon">🌐</span>
+                <div class="tech-info">
+                  <span class="tech-name">JavaScript (ES6+)</span>
+                  <span class="tech-desc">DOM manipulation, Asynchronous events, Fetch API</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="HTML5 & CSS3">
+                <span class="tech-icon">🎨</span>
+                <div class="tech-info">
+                  <span class="tech-name">HTML5 &amp; CSS3</span>
+                  <span class="tech-desc">Semantic markup, Flexbox, Grid, Responsive UI</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 2: Backend & Web Technologies -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <span class="category-icon">🔌</span>
+              <h3 class="category-title">Backend &amp; Web Technologies</h3>
+            </div>
+            <div class="tech-badges-list">
+              
+              <div class="tech-badge" data-tech="Servlets">
+                <span class="tech-icon">🔄</span>
+                <div class="tech-info">
+                  <span class="tech-name">Jakarta Servlets</span>
+                  <span class="tech-desc">HTTP pipeline, Filters, Session tracking</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="JSP">
+                <span class="tech-icon">📄</span>
+                <div class="tech-info">
+                  <span class="tech-name">JSP &amp; JSTL</span>
+                  <span class="tech-desc">Server-side rendering, Custom tags, Expression Language</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="JDBC">
+                <span class="tech-icon">🔗</span>
+                <div class="tech-info">
+                  <span class="tech-name">JDBC</span>
+                  <span class="tech-desc">Connection pooling, PreparedStatements, Transactions</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="Spring">
+                <span class="tech-icon">🌱</span>
+                <div class="tech-info">
+                  <span class="tech-name">Spring Framework</span>
+                  <span class="tech-desc">IoC container, Bean lifecycle, Dependency Injection</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="Tomcat">
+                <span class="tech-icon">🐱</span>
+                <div class="tech-info">
+                  <span class="tech-name">Apache Tomcat</span>
+                  <span class="tech-desc">Servlet container runtime, WAR deployment</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 3: Database & Engineering Tools -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <span class="category-icon">🧰</span>
+              <h3 class="category-title">Database &amp; Developer Tools</h3>
+            </div>
+            <div class="tech-badges-list">
+              
+              <div class="tech-badge" data-tech="MySQL">
+                <span class="tech-icon">🐬</span>
+                <div class="tech-info">
+                  <span class="tech-name">MySQL</span>
+                  <span class="tech-desc">Relational modeling, Constraints, Indexing, Transactions</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="Git">
+                <span class="tech-icon">🌿</span>
+                <div class="tech-info">
+                  <span class="tech-name">Git &amp; GitHub</span>
+                  <span class="tech-desc">Branching, Version control, Pull requests</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="Maven">
+                <span class="tech-icon">📦</span>
+                <div class="tech-info">
+                  <span class="tech-name">Apache Maven</span>
+                  <span class="tech-desc">POM configuration, Dependency resolution, Build lifecycle</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="JUnit">
+                <span class="tech-icon">🧪</span>
+                <div class="tech-info">
+                  <span class="tech-name">JUnit &amp; Mockito</span>
+                  <span class="tech-desc">Automated unit testing, Assertions, Test cases</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="IDEs">
+                <span class="tech-icon">🖥️</span>
+                <div class="tech-info">
+                  <span class="tech-name">Eclipse &amp; NetBeans</span>
+                  <span class="tech-desc">Java IDEs, Debugging, Project configuration</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Category 4: Software Concepts -->
+          <div class="skill-category-card reveal-on-scroll">
+            <div class="category-header">
+              <span class="category-icon">📐</span>
+              <h3 class="category-title">Software Concepts</h3>
+            </div>
+            <div class="tech-badges-list">
+              
+              <div class="tech-badge" data-tech="MVC">
+                <span class="tech-icon">🏛️</span>
+                <div class="tech-info">
+                  <span class="tech-name">MVC Architecture</span>
+                  <span class="tech-desc">Decoupled Model, View, and Controller layers</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="OOP">
+                <span class="tech-icon">🧱</span>
+                <div class="tech-info">
+                  <span class="tech-name">OOP Principles</span>
+                  <span class="tech-desc">Encapsulation, Polymorphism, Inheritance, Abstraction</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="DAO">
+                <span class="tech-icon">📂</span>
+                <div class="tech-info">
+                  <span class="tech-name">DAO &amp; DTO Pattern</span>
+                  <span class="tech-desc">Data Access Objects and transfer objects</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="DSA">
+                <span class="tech-icon">⚡</span>
+                <div class="tech-info">
+                  <span class="tech-name">DSA Foundations</span>
+                  <span class="tech-desc">Arrays, LinkedLists, Trees, HashMaps, Complexity</span>
+                </div>
+              </div>
+
+              <div class="tech-badge" data-tech="RBAC">
+                <span class="tech-icon">🛡️</span>
+                <div class="tech-info">
+                  <span class="tech-name">Role-Based Access (RBAC)</span>
+                  <span class="tech-desc">Session management, Access control, Input validation</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 9, 10, 11, 12. PROJECTS SECTION (SHOWCASE) -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">03. FEATURED PROJECTS</span>
+          <h2 class="section-title">Featured Projects &amp; Software Development</h2>
+          <p class="section-subtitle">
+            Practical software projects built with Java, Servlets, JSP, JDBC, and MySQL with clean architecture and database integration.
+          </p>
+        </div>
+
+        <div class="projects-list">
+          
+          <!-- FEATURED PROJECT 1: AEGIS -->
+          <article class="featured-project-card reveal-on-scroll" id="project-aegis">
+            <!-- Project Mockup Preview Area -->
+            <div class="project-preview-wrapper">
+              <div class="mockup-frame">
+                <!-- Mockup Top Bar -->
+                <div class="mockup-header">
+                  <div class="mockup-dots">
+                    <span class="m-dot red"></span>
+                    <span class="m-dot yellow"></span>
+                    <span class="m-dot green"></span>
+                  </div>
+                  <div class="mockup-address">
+                    <span class="lock-icon">🔒</span>
+                    <span>localhost:8080/aegis/dashboard</span>
+                  </div>
+                  <div class="mockup-badge">JAVA PROJECT</div>
+                </div>
+
+                <!-- Abstract UI Dashboard Simulation: AEGIS -->
+                <div class="mockup-body aegis-dashboard-mockup">
+                  <div class="aegis-sidebar">
+                    <div class="sidebar-logo">AEGIS <span class="tag">v1.0</span></div>
+                    <div class="sidebar-nav">
+                      <div class="s-nav-item active">⬡ Dashboard</div>
+                      <div class="s-nav-item">🛡️ Access Control</div>
+                      <div class="s-nav-item">👥 User Management</div>
+                      <div class="s-nav-item">📊 Audit Logs</div>
+                    </div>
+                    <div class="sidebar-status">
+                      <span class="status-dot green"></span> Database: Connected
+                    </div>
+                  </div>
+
+                  <div class="aegis-main">
+                    <div class="dash-top-metrics">
+                      <div class="d-metric-card">
+                        <span class="d-metric-label">Architecture</span>
+                        <span class="d-metric-val green-text">Servlet • Service • DAO</span>
+                      </div>
+                      <div class="d-metric-card">
+                        <span class="d-metric-label">Database</span>
+                        <span class="d-metric-val">MySQL (InnoDB)</span>
+                      </div>
+                      <div class="d-metric-card">
+                        <span class="d-metric-label">Access Control</span>
+                        <span class="d-metric-val blue-text">Role-Based (RBAC)</span>
+                      </div>
+                    </div>
+
+                    <div class="dash-engine-view">
+                      <div class="pipeline-flow">
+                        <div class="pipe-node active">
+                          <span class="node-title">Servlet 6.0</span>
+                          <span class="node-sub">Controller</span>
+                        </div>
+                        <span class="pipe-arrow">➔</span>
+                        <div class="pipe-node active">
+                          <span class="node-title">Service Layer</span>
+                          <span class="node-sub">Business Logic</span>
+                        </div>
+                        <span class="pipe-arrow">➔</span>
+                        <div class="pipe-node active">
+                          <span class="node-title">DAO Layer</span>
+                          <span class="node-sub">PreparedStatement</span>
+                        </div>
+                        <span class="pipe-arrow">➔</span>
+                        <div class="pipe-node active">
+                          <span class="node-title">MySQL</span>
+                          <span class="node-sub">Relational Schema</span>
+                        </div>
+                      </div>
+
+                      <div class="live-audit-log">
+                        <span class="log-line ok">[INFO] Application initialized: Jakarta Servlets &amp; JDBC</span>
+                        <span class="log-line ok">[INFO] Database connection established: MySQL (localhost:3306)</span>
+                        <span class="log-line info">[INFO] AuthFilter active: Session and role permissions verified</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mockup-label-tag">Project UI Preview • Java Multi-Tier Architecture</div>
+              </div>
+            </div>
+
+            <!-- Project Details & Content -->
+            <div class="project-info">
+              <div class="project-pill-header">
+                <span class="project-flagship-pill">⭐ FEATURED PROJECT</span>
+                <span class="project-time-pill">Java • Jakarta EE</span>
+              </div>
+
+              <h3 class="project-title">AEGIS — Role-Based Access &amp; Security Management</h3>
+              <p class="project-motto">"A modular Java web application focused on clean architecture and access control."</p>
+
+              <p class="project-description">
+                A structured Java web application built using Jakarta Servlets, JDBC, and MySQL. It focuses on clean separation of concerns across controllers, service logic, and data access layers, featuring role-based access control (RBAC), parameterized queries to prevent SQL injection, and defensive resource management.
+              </p>
+
+              <div class="project-tags">
+                <span class="pill-tag">Java</span>
+                <span class="pill-tag">Jakarta Servlets</span>
+                <span class="pill-tag">JDBC</span>
+                <span class="pill-tag">DAO / DTO</span>
+                <span class="pill-tag">MySQL</span>
+                <span class="pill-tag">Apache Maven</span>
+                <span class="pill-tag">JUnit &amp; Mockito</span>
+                <span class="pill-tag">RBAC Security</span>
+              </div>
+
+              <!-- Main Project Features List -->
+              <div class="project-features-list">
+                <h4 class="features-title">Core Engineering Features:</h4>
+                <ul class="features-ul">
+                  <li><strong>Multi-Tier Layering:</strong> Clean separation between HTTP servlets (`com.aegis.controller`), service logic, and data access objects.</li>
+                  <li><strong>Role-Based Access Control:</strong> Session validation and role permissions protecting administrative and user endpoints.</li>
+                  <li><strong>Defensive JDBC Queries:</strong> Standardized use of `PreparedStatement` with `try-with-resources` to prevent SQL injection and connection leaks.</li>
+                  <li><strong>Unit Testing:</strong> Automated unit tests with JUnit and Mockito to verify service logic and business rules in isolation.</li>
+                </ul>
+              </div>
+
+              <!-- Action CTAs -->
+              <div class="project-actions">
+                <button class="btn btn-primary open-modal-btn" data-modal="modal-aegis">
+                  <span>View Details &amp; Architecture</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                </button>
+
+                <a href="https://github.com/ashutoshshehra" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <span>GitHub Repository</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- FEATURED PROJECT 2: AnnaSetu (AnnPath) -->
+          <article class="featured-project-card reveal-on-scroll" id="project-annasetu">
+            <!-- Project Mockup Preview Area -->
+            <div class="project-preview-wrapper">
+              <div class="mockup-frame">
+                <!-- Mockup Top Bar -->
+                <div class="mockup-header">
+                  <div class="mockup-dots">
+                    <span class="m-dot red"></span>
+                    <span class="m-dot yellow"></span>
+                    <span class="m-dot green"></span>
+                  </div>
+                  <div class="mockup-address">
+                    <span class="lock-icon">🔒</span>
+                    <span>annasetu.org/rescue/mission-tracker</span>
+                  </div>
+                  <div class="mockup-badge">JAVA PROTOTYPE</div>
+                </div>
+
+                <!-- Abstract UI Dashboard Simulation: AnnaSetu -->
+                <div class="mockup-body annasetu-mockup">
+                  <!-- Impact Metrics Ticker -->
+                  <div class="impact-ticker-bar">
+                    <div class="ticker-stat">
+                      <span class="t-icon">🍲</span>
+                      <span class="t-value">Food Donations</span>
+                      <span class="t-label">Available Listings</span>
+                    </div>
+                    <div class="ticker-divider"></div>
+                    <div class="ticker-stat">
+                      <span class="t-icon">🚚</span>
+                      <span class="t-value">Pickup Requests</span>
+                      <span class="t-label">Dispatch Queue</span>
+                    </div>
+                    <div class="ticker-divider"></div>
+                    <div class="ticker-stat">
+                      <span class="t-icon">⏳</span>
+                      <span class="t-value">Pending Requests</span>
+                      <span class="t-label">Awaiting NGO Claim</span>
+                    </div>
+                    <div class="ticker-divider"></div>
+                    <div class="ticker-stat">
+                      <span class="t-icon">👥</span>
+                      <span class="t-value">Active Users</span>
+                      <span class="t-label">Donors &amp; Volunteers</span>
+                    </div>
+                  </div>
+
+                  <!-- Active Dispatch Visual Card -->
+                  <div class="annasetu-dispatch-preview">
+                    <div class="rescue-card-sample">
+                      <div class="rescue-header">
+                        <span class="badge-fresh">⏳ Shelf Life: 02h 45m</span>
+                        <span class="badge-urgency">HIGH PRIORITY</span>
+                      </div>
+                      <div class="rescue-title">Surplus Food Listing — Prepared Meals</div>
+                      <div class="rescue-route">
+                        <div class="route-point">
+                          <span class="dot-green"></span>
+                          <span>Pickup: Donor Location</span>
+                        </div>
+                        <div class="route-line"></div>
+                        <div class="route-point">
+                          <span class="dot-blue"></span>
+                          <span>Delivery: NGO Shelter Point</span>
+                        </div>
+                      </div>
+                      <div class="rescue-footer">
+                        <span class="dispatch-volunteer">🚴 Volunteer Dispatch: Assigned</span>
+                        <span class="verified-badge">✓ Verified NGO Claim</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="mockup-multilingual-strip">
+                    <span>🌐 Multilingual Support: English • हिन्दी • Español • Français</span>
+                  </div>
+                </div>
+
+                <div class="mockup-label-tag">Application UI Preview • AnnPath / AnnaSetu Prototype</div>
+              </div>
+            </div>
+
+            <!-- Project Details & Content -->
+            <div class="project-info">
+              <div class="project-pill-header">
+                <span class="project-flagship-pill green">🌱 SOCIAL IMPACT PROJECT</span>
+                <span class="project-time-pill">Java • MVC Web App</span>
+              </div>
+
+              <h3 class="project-title">AnnaSetu (AnnPath) — Food Redistribution Network</h3>
+              <p class="project-motto">"A Bridge Between Food and Need."</p>
+
+              <p class="project-description">
+                A software prototype designed to connect food donors (restaurants, caterers) with verified NGOs and volunteer dispatchers. Built with Java Servlets, JSP, JDBC, and MySQL, the application features role-based dashboards, food listings with shelf-life countdown timers, dynamic request matching, and multi-language support.
+              </p>
+
+              <div class="project-tags">
+                <span class="pill-tag">Java</span>
+                <span class="pill-tag">Jakarta Servlets</span>
+                <span class="pill-tag">JSP / JSTL</span>
+                <span class="pill-tag">JDBC</span>
+                <span class="pill-tag">MySQL</span>
+                <span class="pill-tag">i18n (4 Locales)</span>
+                <span class="pill-tag">Tomcat</span>
+                <span class="pill-tag">MVC Pattern</span>
+              </div>
+
+              <!-- Main Project Features List -->
+              <div class="project-features-list">
+                <h4 class="features-title">Core Engineering Features:</h4>
+                <ul class="features-ul">
+                  <li><strong>Multi-Role User Workflows:</strong> Tailored dashboards for Donors, NGOs, and Volunteers with session-based authentication.</li>
+                  <li><strong>Shelf-Life Countdown Clocks:</strong> Timers on food listings to help NGOs prioritize and claim time-sensitive food donations.</li>
+                  <li><strong>Transactional Claims:</strong> Atomic database updates preventing race conditions when multiple NGOs attempt to claim listings simultaneously.</li>
+                  <li><strong>Internationalization (i18n):</strong> Multi-language UI support utilizing Java ResourceBundles (English, Hindi, Spanish, and French).</li>
+                </ul>
+              </div>
+
+              <!-- Action CTAs -->
+              <div class="project-actions">
+                <button class="btn btn-primary open-modal-btn" data-modal="modal-annasetu">
+                  <span>View Details &amp; Architecture</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                </button>
+
+                <a href="https://github.com/ashutoshshehra" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <span>GitHub Repository</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- FEATURED PROJECT 3: SmartExam -->
+          <article class="featured-project-card reveal-on-scroll" id="project-smartexam">
+            <!-- Project Mockup Preview Area -->
+            <div class="project-preview-wrapper">
+              <div class="mockup-frame">
+                <!-- Mockup Top Bar -->
+                <div class="mockup-header">
+                  <div class="mockup-dots">
+                    <span class="m-dot red"></span>
+                    <span class="m-dot yellow"></span>
+                    <span class="m-dot green"></span>
+                  </div>
+                  <div class="mockup-address">
+                    <span class="lock-icon">🔒</span>
+                    <span>localhost:8080/smartexam/student-dashboard</span>
+                  </div>
+                  <div class="mockup-badge">ONLINE EXAM SYSTEM</div>
+                </div>
+
+                <!-- Abstract UI Dashboard Simulation: SmartExam -->
+                <div class="mockup-body smartexam-mockup">
+                  <!-- Student Dashboard Navigation Bar -->
+                  <div class="exam-mockup-nav">
+                    <div class="exam-student-pill">
+                      <span class="status-dot green"></span>
+                      <span>Student Portal • Session Active</span>
+                    </div>
+                    <div class="exam-nav-tabs">
+                      <span class="exam-tab active">Dashboard</span>
+                      <span class="exam-tab">Available Exams</span>
+                      <span class="exam-tab">Results</span>
+                    </div>
+                  </div>
+
+                  <!-- Two-panel layout: Left = Exam Question in Progress, Right = Available Exams & Result Summary -->
+                  <div class="exam-mockup-content">
+                    <!-- Left: Active Question Simulation -->
+                    <div class="exam-question-panel">
+                      <div class="question-panel-header">
+                        <span class="exam-subject-tag">Java Programming Assessment</span>
+                        <span class="exam-timer-tag">⏱️ 45m Remaining</span>
+                      </div>
+                      <div class="question-number">Question 03 of 10</div>
+                      <div class="question-prompt">Which keyword is used to inherit a class in Java?</div>
+                      <div class="question-options">
+                        <div class="q-option">
+                          <span class="opt-label">A</span>
+                          <span class="opt-text">implements</span>
+                        </div>
+                        <div class="q-option selected">
+                          <span class="opt-label">B</span>
+                          <span class="opt-text">extends</span>
+                          <span class="opt-check">✓</span>
+                        </div>
+                        <div class="q-option">
+                          <span class="opt-label">C</span>
+                          <span class="opt-text">inherits</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Right: Available Exams & Result Summary -->
+                    <div class="exam-side-panel">
+                      <!-- Available Exams Box -->
+                      <div class="exam-side-box">
+                        <div class="side-box-title">Available Exams</div>
+                        <div class="mini-exam-row">
+                          <span class="mini-exam-name">Object-Oriented Java</span>
+                          <span class="mini-badge-open">Open</span>
+                        </div>
+                        <div class="mini-exam-row">
+                          <span class="mini-exam-name">Database &amp; SQL Basics</span>
+                          <span class="mini-badge-open">Open</span>
+                        </div>
+                      </div>
+
+                      <!-- Result Summary Box -->
+                      <div class="exam-side-box result-summary-box">
+                        <div class="side-box-title">Recent Result Summary</div>
+                        <div class="result-metric-row">
+                          <span class="res-label">Assessment</span>
+                          <span class="res-val">Java Basics</span>
+                        </div>
+                        <div class="result-metric-row">
+                          <span class="res-label">Evaluation</span>
+                          <span class="res-val green-text">Passed (85%)</span>
+                        </div>
+                        <div class="result-metric-row">
+                          <span class="res-label">Status</span>
+                          <span class="res-val">Saved to MySQL</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Footer Bar -->
+                  <div class="exam-mockup-footer">
+                    <span>💻 Development Environment: NetBeans IDE • GlassFish Server • MySQL</span>
+                  </div>
+                </div>
+
+                <div class="mockup-label-tag">Application UI Preview • SmartExam System Prototype</div>
+              </div>
+            </div>
+
+            <!-- Project Details & Content -->
+            <div class="project-info">
+              <div class="project-pill-header">
+                <span class="project-flagship-pill purple">🎓 EXAMINATION PLATFORM</span>
+                <span class="project-time-pill">Java • JSP &amp; Servlets</span>
+              </div>
+
+              <h3 class="project-title">SmartExam — Web-based Online Examination System</h3>
+              <p class="project-motto">"Structured examination delivery, question management, and automated results."</p>
+
+              <p class="project-description">
+                SmartExam is a web-based online examination system built to manage online exams, questions, assignments, users, and examination results. Developed and tested locally using NetBeans IDE and GlassFish Server.
+              </p>
+
+              <div class="project-tags">
+                <span class="pill-tag">Java</span>
+                <span class="pill-tag">JSP</span>
+                <span class="pill-tag">Servlets</span>
+                <span class="pill-tag">JDBC</span>
+                <span class="pill-tag">MySQL</span>
+                <span class="pill-tag">HTML / CSS / JS</span>
+                <span class="pill-tag">MVC Architecture</span>
+                <span class="pill-tag">Session Management</span>
+              </div>
+
+              <!-- Main Project Features List -->
+              <div class="project-features-list">
+                <h4 class="features-title">Core Implemented Features:</h4>
+                <ul class="features-ul">
+                  <li><strong>Role-Based Authentication:</strong> Dedicated login and workflows for Admin, Teacher, and Student roles with session-based access control.</li>
+                  <li><strong>Question &amp; Exam Management:</strong> Capabilities for teachers and administrators to create questions, configure test parameters, and manage assignments.</li>
+                  <li><strong>Online Examination Delivery:</strong> Clean student testing interface with question navigation, timer display, and option selection.</li>
+                  <li><strong>Automated Result Evaluation:</strong> Server-side grading of submitted answers with evaluation records persisted to MySQL via JDBC.</li>
+                </ul>
+              </div>
+
+              <!-- Action CTAs -->
+              <div class="project-actions">
+                <button class="btn btn-primary open-modal-btn" data-modal="modal-smartexam">
+                  <span>View Details &amp; Architecture</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                </button>
+
+                <a href="https://github.com/ashutoshshehra/OnlineExamSystem" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                  <span>GitHub Repository</span>
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        
+        <div class="section-header reveal-on-scroll">
+          <span class="section-tag">04. EDUCATION &amp; LEARNING</span>
+          <h2 class="section-title">Education &amp; Academic Background</h2>
+          <p class="section-subtitle">
+            Strong foundations in computer science, software engineering principles, and backend development.
+          </p>
+        </div>
+
+        <div class="principles-grid education-grid">
+          
+          <div class="principle-card education-card reveal-on-scroll">
+            <div class="principle-num">01</div>
+            <h3 class="principle-title">Degree &amp; Program</h3>
+            <p class="principle-desc">
+              <strong>Undergraduate Engineering Student</strong><br>
+              Pursuing a Bachelor's degree in Computer Science / Engineering, focusing on core programming fundamentals, relational database management, and object-oriented software development.
+            </p>
+          </div>
+
+          <div class="principle-card education-card reveal-on-scroll">
+            <div class="principle-num">02</div>
+            <h3 class="principle-title">Core Coursework</h3>
+            <p class="principle-desc">
+              Key coursework includes Data Structures &amp; Algorithms, Object-Oriented Programming (Java &amp; C++), Database Management Systems (DBMS / SQL), Operating Systems, and Software Engineering.
+            </p>
+          </div>
+
+          <div class="principle-card education-card reveal-on-scroll">
+            <div class="principle-num">03</div>
+            <h3 class="principle-title">Hands-On Practice</h3>
+            <p class="principle-desc">
+              Applying academic concepts to practical software projects—building MVC web applications, writing JDBC data access layers, implementing role-based authentication, and testing code in NetBeans and Eclipse.
+            </p>
+          </div>
+
+          <div class="principle-card education-card reveal-on-scroll">
+            <div class="principle-num">04</div>
+            <h3 class="principle-title">Independent Learning</h3>
+            <p class="principle-desc">
+              Continuously exploring technologies beyond the syllabus: studying Spring Framework (IoC, Dependency Injection), RESTful APIs, Git version control, and clean code principles.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <div class="contact-box reveal-on-scroll">
+          
+          <div class="contact-left">
+            <span class="section-tag">05. GET IN TOUCH</span>
+            <h2 class="contact-heading">Looking for opportunities to learn and contribute</h2>
+            <p class="contact-subtext">
+              I am an engineering student actively seeking software engineering internships, junior developer roles, and backend opportunities. If you'd like to discuss Java development or have questions about my projects, feel free to reach out!
+            </p>
+
+            <div class="contact-channels">
+              
+              <a href="mailto:ashutoshshehra01@gmail.com" class="channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">Email Me</span>
+                  <span class="channel-val">ashutoshshehra01@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://www.linkedin.com/in/ashutosh-shehra-17b498398" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">LinkedIn</span>
+                  <span class="channel-val">linkedin.com/in/ashutosh-shehra</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/ashutoshshehra" target="_blank" rel="noopener noreferrer" class="channel-item">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                    <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                  </svg>
+                </div>
+                <div class="channel-info">
+                  <span class="channel-label">GitHub</span>
+                  <span class="channel-val">github.com/ashutoshshehra</span>
+                </div>
+              </a>
+
+            </div>
+
+            <div class="current-status-banner">
+              <span class="status-indicator"></span>
+              <span>Status: Open to Software Engineering Internships &amp; Entry-Level Roles</span>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-right">
+            <form class="contact-form" id="contactForm" action="https://formsubmit.co/ashutoshshehra01@gmail.com" method="POST">
+              <!-- FormSubmit Configuration -->
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_template" value="table">
+              <input type="hidden" name="_subject" id="formSubmitSubject" value="New Portfolio Contact Message">
+
+              <div class="form-group">
+                <label for="contactName" class="form-label">Your Name</label>
+                <input type="text" id="contactName" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactEmail" class="form-label">Email Address</label>
+                <input type="email" id="contactEmail" name="email" class="form-input" placeholder="e.g. alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactSubject" class="form-label">Subject</label>
+                <input type="text" id="contactSubject" name="subject" class="form-input" placeholder="Software Engineering Opportunity / Project Discussion" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contactMessage" class="form-label">Message</label>
+                <textarea id="contactMessage" name="message" rows="4" class="form-textarea" placeholder="Hello Ashutosh, I reviewed your projects and would like to talk about..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitFormBtn">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" class="btn-arrow">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div class="form-status" id="formStatus" aria-live="polite"></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- 21. FOOTER -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <div class="footer-brand">
+          <span class="brand-monogram sm">AS</span>
+          <span class="footer-name">Ashutosh Shehra</span>
+        </div>
+        <p class="footer-tagline">Java Developer • Software Engineering Student</p>
+      </div>
+
+      <div class="footer-center">
+        <ul class="footer-nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="assets/Ashutosh_Shehra_Resume.pdf" download="Ashutosh_Shehra_Resume.pdf">Resume</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-social-icons">
+          <a href="https://github.com/ashutoshshehra" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/ashutosh-shehra-17b498398" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="mailto:ashutoshshehra01@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </a>
+        </div>
+        <p class="copyright">&copy; 2026 Ashutosh Shehra. Built with simple code &amp; premium design.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 12. PROJECT DETAILS MODALS -->
+
+  <!-- MODAL: AEGIS -->
+  <div class="modal-backdrop" id="modal-aegis" role="dialog" aria-modal="true" aria-labelledby="aegis-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="modal-badge">JAVA WEB APPLICATION</span>
+          <h3 class="modal-title" id="aegis-modal-title">AEGIS — Role-Based Access &amp; Security Management</h3>
+        </div>
+        <button class="modal-close-btn" aria-label="Close details modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        
+        <div class="modal-section">
+          <h4 class="modal-subtitle">1. Overview &amp; Rationale</h4>
+          <p>
+            AEGIS is a modular Java web application developed using Jakarta Servlets, JDBC, and MySQL. It was built to demonstrate clean multi-tier software architecture, separating responsibilities into presentation, service, and data access layers while implementing role-based access control (RBAC) and defensive database access.
+          </p>
+        </div>
+
+        <div class="modal-section-grid">
+          <div class="modal-box">
+            <span class="box-icon">⚠️</span>
+            <h5 class="box-heading">The Problem</h5>
+            <p>
+              Many beginner Java web applications intertwine SQL queries, business logic, and HTTP handling inside single servlet classes. This leads to code duplication, tight coupling, and vulnerabilities like SQL injection.
+            </p>
+          </div>
+
+          <div class="modal-box">
+            <span class="box-icon">💡</span>
+            <h5 class="box-heading">The Solution</h5>
+            <p>
+              A structured multi-tier architecture with separate packages for Controllers (HTTP servlets), Services (business logic), and DAOs (JDBC PreparedStatement data access), protected by session authentication and role authorization.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-subtitle">2. System Architecture &amp; Data Flow</h4>
+          <div class="architecture-diagram">
+            <div class="arch-layer">
+              <span class="layer-title">Client Layer</span>
+              <span class="layer-box">HTTP Client / Web Browser (HTML / Form Data / Requests)</span>
+            </div>
+            <div class="arch-arrow">↓ Requests dispatched</div>
+            <div class="arch-layer">
+              <span class="layer-title">Controller Tier (`com.aegis.controller`)</span>
+              <span class="layer-box">Jakarta Servlets • Request Validation • DTO Handling • Zero Direct SQL</span>
+            </div>
+            <div class="arch-arrow">↓ Invokes service methods</div>
+            <div class="arch-layer">
+              <span class="layer-title">Service Tier (`com.aegis.service`)</span>
+              <span class="layer-box">Business Rules • Role Verification • Domain Logic Orchestration</span>
+            </div>
+            <div class="arch-arrow">↓ Parameterized queries only</div>
+            <div class="arch-layer">
+              <span class="layer-title">Data Access Tier (`com.aegis.dao`)</span>
+              <span class="layer-box">JDBC `PreparedStatement` • Result Mapping to Models • Connection Release</span>
+            </div>
+            <div class="arch-arrow">↓ Connection pool</div>
+            <div class="arch-layer">
+              <span class="layer-title">Database Tier</span>
+              <span class="layer-box">MySQL Relational Schema (Tables, Foreign Keys &amp; Indexes)</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-subtitle">3. Key Engineering Features</h4>
+          <ul class="modal-list">
+            <li><strong>Structured Exception Handling:</strong> Layered exception classes prevent raw database stack traces and internal paths from exposing details to client browsers.</li>
+            <li><strong>Centralized Configuration:</strong> Configuration utility loading database credentials and app properties with environment fallback support.</li>
+            <li><strong>Role-Based Access Control (RBAC):</strong> Session-level filters verifying user permissions before granting access to protected routes.</li>
+            <li><strong>Unit Testing Suite:</strong> Automated test suites with JUnit and Mockito verifying service layer operations independently without live database dependencies.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-subtitle">4. Technical Challenges &amp; Solutions</h4>
+          <div class="challenge-item">
+            <strong>Challenge: Preventing Controller-DAO Coupling</strong>
+            <p>Directly calling DAOs in servlets creates tightly coupled code. <em>Solution:</em> Enforced an explicit Service layer and DTO classes to decouple web handling from persistence.</p>
+          </div>
+          <div class="challenge-item">
+            <strong>Challenge: JDBC Resource Management</strong>
+            <p>Unclosed connections can exhaust database connection pools. <em>Solution:</em> Implemented consistent <code>try-with-resources</code> patterns ensuring automatic closing of Connections, Statements, and ResultSets.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com/ashutoshshehra" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <span>View on GitHub</span> ↗
+        </a>
+        <button class="btn btn-secondary modal-close-btn-action">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: ANNASETU (ANNPATH) -->
+  <div class="modal-backdrop" id="modal-annasetu" role="dialog" aria-modal="true" aria-labelledby="annasetu-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="modal-badge green">COMMUNITY PROJECT PROTOTYPE</span>
+          <h3 class="modal-title" id="annasetu-modal-title">AnnaSetu (AnnPath) — Food Redistribution Prototype</h3>
+        </div>
+        <button class="modal-close-btn" aria-label="Close details modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        
+        <div class="modal-section">
+          <h4 class="modal-subtitle">1. Overview &amp; Mission</h4>
+          <p>
+            AnnaSetu ("A Bridge Between Food and Need") is a software prototype built to streamline food surplus redistribution. It connects food donors (banquets, caterers, restaurants) with verified NGOs and volunteer dispatchers, facilitating timely food claims before perishable items expire.
+          </p>
+        </div>
+
+        <div class="modal-section-grid">
+          <div class="modal-box">
+            <span class="box-icon">🍲</span>
+            <h5 class="box-heading">The Problem</h5>
+            <p>
+              Edible surplus food from events and restaurants often goes to waste due to the lack of an organized channel to notify nearby shelters and volunteers quickly.
+            </p>
+          </div>
+
+          <div class="modal-box">
+            <span class="box-icon">🤝</span>
+            <h5 class="box-heading">The Solution</h5>
+            <p>
+              An authenticated web application with role-specific views for Donors, NGOs, and Volunteers, providing shelf-life countdown clocks, structured claim workflows, and real-time donation status updates.
+            </p>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-subtitle">2. System Architecture</h4>
+          <div class="architecture-diagram">
+            <div class="arch-layer">
+              <span class="layer-title">Front-End Presentation</span>
+              <span class="layer-box">JSP Views, JSTL, Responsive CSS, JavaScript Countdown Clocks</span>
+            </div>
+            <div class="arch-arrow">↓ Form submissions &amp; requests</div>
+            <div class="arch-layer">
+              <span class="layer-title">Filter &amp; Controller Tier (`org.annpath.controller`)</span>
+              <span class="layer-box">AuthenticationFilter • CharacterEncodingFilter • Role Route Filters • Servlets</span>
+            </div>
+            <div class="arch-arrow">↓ Business rules execution</div>
+            <div class="arch-layer">
+              <span class="layer-title">Service Layer (`org.annpath.service`)</span>
+              <span class="layer-box">Donation Workflow Logic • Expiry Status Checks • Claim Validations</span>
+            </div>
+            <div class="arch-arrow">↓ Transactional persistence</div>
+            <div class="arch-layer">
+              <span class="layer-title">DAO &amp; Database (`org.annpath.dao` / MySQL)</span>
+              <span class="layer-box">PreparedStatement DAOs • Connection Pooling • Atomic Claim Queries</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-subtitle">3. Key Technical Features</h4>
+          <ul class="modal-list">
+            <li><strong>Multi-Language Support (i18n):</strong> Supported via Java <code>ResourceBundle</code> properties files for English, Hindi, and additional languages.</li>
+            <li><strong>Shelf-Life Countdown Clocks:</strong> Synchronized expiration timers flagging listings approaching their expiry window to prioritize dispatcher routing.</li>
+            <li><strong>Role-Based Navigation:</strong> Session security ensuring donors manage listings, NGOs claim available food, and dispatchers view assignments.</li>
+            <li><strong>Dynamic Request Tracking:</strong> MySQL database tracking pending requests, active listings, and fulfillment history.</li>
+          </ul>
+        </div>
+
+        <div class="modal-section">
+          <h4 class="modal-subtitle">4. Technical Challenges &amp; Solutions</h4>
+          <div class="challenge-item">
+            <strong>Challenge: Preventing Double-Claim Race Conditions</strong>
+            <p>Two NGOs attempting to claim the same food item simultaneously could cause duplicate claims. <em>Solution:</em> Implemented conditional SQL status updates within atomic transactions (<code>UPDATE donations SET status = 'CLAIMED' WHERE id = ? AND status = 'AVAILABLE'</code>).</p>
+          </div>
+          <div class="challenge-item">
+            <strong>Challenge: Multilingual Character Encoding</strong>
+            <p>Hindi Unicode script (Devanagari) was rendering distorted characters on older Tomcat setups. <em>Solution:</em> Implemented a custom <code>CharacterEncodingFilter</code> enforcing UTF-8 across all request and response streams.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com/ashutoshshehra" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <span>View on GitHub</span> ↗
+        </a>
+        <button class="btn btn-secondary modal-close-btn-action">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: SMARTEXAM -->
+  <div class="modal-backdrop" id="modal-smartexam" role="dialog" aria-modal="true" aria-labelledby="smartexam-modal-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div>
+          <span class="modal-badge purple">WEB-BASED ONLINE EXAMINATION SYSTEM</span>
+          <h3 class="modal-title" id="smartexam-modal-title">SmartExam — Online Examination &amp; Assessment System</h3>
+        </div>
+        <button class="modal-close-btn" aria-label="Close details modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        
+        <!-- 1. Overview -->
+        <div class="modal-section">
+          <h4 class="modal-subtitle">1. Overview</h4>
+          <p>
+            SmartExam is a web-based online examination system built to manage online exams, questions, assignments, users, and examination results. Developed and tested locally using NetBeans IDE and GlassFish Server, it provides a structured platform for academic testing, allowing educators to create test papers and evaluate student performance through an intuitive web interface.
+          </p>
+        </div>
+
+        <!-- 2. Problem & 3. Solution -->
+        <div class="modal-section-grid">
+          <div class="modal-box">
+            <span class="box-icon">⚠️</span>
+            <h5 class="box-heading">2. Problem</h5>
+            <p>
+              Traditional paper-based examinations and manual evaluations require substantial administrative coordination, printing resources, and time-consuming manual grading. There is a need for a straightforward, localized web-based system where instructors can easily author questions, schedule tests, and compute student results automatically.
+            </p>
+          </div>
+
+          <div class="modal-box">
+            <span class="box-icon">💡</span>
+            <h5 class="box-heading">3. Solution</h5>
+            <p>
+              An MVC web application providing dedicated interfaces for Admins, Teachers, and Students. The system centralizes question and assignment management, delivers timed tests to students, handles automated server-side evaluation, and stores all records in a structured MySQL database via JDBC.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. User Roles -->
+        <div class="modal-section">
+          <h4 class="modal-subtitle">4. User Roles &amp; Responsibilities</h4>
+          <ul class="modal-list">
+            <li><strong>Admin:</strong> Manages user accounts, oversees system activity, and maintains application integrity.</li>
+            <li><strong>Teacher:</strong> Authors and edits questions, configures examinations and assignments, and views student results.</li>
+            <li><strong>Student:</strong> Registers, logs in, browses available exams, takes timed assessments, and views instant evaluation results.</li>
+          </ul>
+        </div>
+
+        <!-- 5. Key Features -->
+        <div class="modal-section">
+          <h4 class="modal-subtitle">5. Key Features</h4>
+          <ul class="modal-list">
+            <li><strong>Role-Based Authentication:</strong> Secure login workflows tailoring accessible views and features based on whether the user is an Admin, Teacher, or Student.</li>
+            <li><strong>User Registration &amp; Login:</strong> Account creation and credential verification with session tracking.</li>
+            <li><strong>Question Management:</strong> Interfaces for adding, modifying, and organizing multiple-choice questions.</li>
+            <li><strong>Exam &amp; Assignment Management:</strong> Tools to create test papers, set time limits, and assign assessments to students.</li>
+            <li><strong>Online Examinations:</strong> Clean exam interface featuring question navigation, option selection, and remaining time display.</li>
+            <li><strong>Result Management:</strong> Server-side scoring comparing submitted responses to answer keys, with immediate performance feedback.</li>
+            <li><strong>Session-Based Authentication:</strong> HTTP session control maintaining user state across pages and protecting unauthorized route access.</li>
+            <li><strong>MySQL Database Integration:</strong> Standardized JDBC data access using parameterized <code>PreparedStatement</code> to store users, questions, exams, and results safely.</li>
+          </ul>
+        </div>
+
+        <!-- 6. Technology Stack -->
+        <div class="modal-section">
+          <h4 class="modal-subtitle">6. Technology Stack</h4>
+          <ul class="modal-list">
+            <li><strong>Backend:</strong> Java, Java Servlets, JSP (JavaServer Pages), JSTL</li>
+            <li><strong>Persistence:</strong> JDBC (Java Database Connectivity), MySQL Database</li>
+            <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript (DOM manipulation, timers, form handling)</li>
+            <li><strong>Architecture &amp; State:</strong> MVC (Model-View-Controller) Architecture, HTTP Session Management</li>
+          </ul>
+        </div>
+
+        <!-- 7. Architecture -->
+        <div class="modal-section">
+          <h4 class="modal-subtitle">7. System Architecture</h4>
+          <div class="architecture-diagram">
+            <div class="arch-layer">
+              <span class="layer-title">User Roles</span>
+              <span class="layer-box">Student / Teacher / Admin</span>
+            </div>
+            <div class="arch-arrow">↓ User interactions &amp; form submissions</div>
+            <div class="arch-layer">
+              <span class="layer-title">Presentation Tier</span>
+              <span class="layer-box">JSP / HTML / CSS / JavaScript (Responsive Views &amp; Client Timers)</span>
+            </div>
+            <div class="arch-arrow">↓ Dispatches HTTP requests</div>
+            <div class="arch-layer">
+              <span class="layer-title">Controller Tier</span>
+              <span class="layer-box">Servlet Controller (Request Handling, Route Protection &amp; Session Management)</span>
+            </div>
+            <div class="arch-arrow">↓ Executes business rules &amp; grading</div>
+            <div class="arch-layer">
+              <span class="layer-title">Service &amp; Business Logic Tier</span>
+              <span class="layer-box">Service / Business Logic (Exam Scoring, Role Validation &amp; Assignment Management)</span>
+            </div>
+            <div class="arch-arrow">↓ Parameterized SQL queries</div>
+            <div class="arch-layer">
+              <span class="layer-title">Data Access Tier</span>
+              <span class="layer-box">DAO / JDBC (`PreparedStatement` &amp; Connection Management)</span>
+            </div>
+            <div class="arch-arrow">↓ Relational tables</div>
+            <div class="arch-layer">
+              <span class="layer-title">Database Tier</span>
+              <span class="layer-box">MySQL (Users, Questions, Exams, Assignments &amp; Results)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Development Environment -->
+        <div class="modal-section">
+          <h4 class="modal-subtitle">8. Development Environment</h4>
+          <ul class="modal-list">
+            <li><strong>IDE:</strong> Apache NetBeans IDE</li>
+            <li><strong>Application Server:</strong> GlassFish Server</li>
+            <li><strong>Database:</strong> MySQL Server (tested locally)</li>
+          </ul>
+        </div>
+
+        <!-- 9. Future Improvements -->
+        <div class="modal-section">
+          <h4 class="modal-subtitle">9. Future Improvements</h4>
+          <ul class="modal-list">
+            <li>Randomizing question and answer option order per student attempt to increase test variety.</li>
+            <li>Adding exportable grade sheets in CSV and PDF formats for teachers and administrators.</li>
+            <li>Supporting additional question formats such as true/false, fill-in-the-blank, and subjective questions.</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="modal-footer">
+        <a href="https://github.com/ashutoshshehra/OnlineExamSystem" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <span>View on GitHub</span> ↗
+        </a>
+        <button class="btn btn-secondary modal-close-btn-action">Close Window</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container for Micro-Interactions -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- Back to Top Floating Button -->
+  <button id="backToTopBtn" class="back-to-top" aria-label="Back to top" title="Scroll to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- JavaScript Application Bundle -->
+  <script src="script.js"></script>
+</body>
+</html>
